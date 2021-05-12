@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+#button {
+  display: none;
+  float: right;
+  padding: 10px;
+}
+#btn {
+  margin: 10px;
+  padding: 2px;
+}
+img {
+  transition-duration: 0.5s;
+}
+img:hover {
+  height: 55px;
+  width: 55px;
+  transition-duration: 0.5s;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  background-color: bisque;
+  height: 100vh;
+
+  transition-duration: 2s;
+}
+.show-sidebar {
+  transform: translate(-100%);
+  transition-duration: 2s;
+}
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list {
+  padding: 10px;
+}
+.link {
+  padding: 5px 0px;
+}
+.link a {
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  #button {
+    display: unset;
+  }
+}
